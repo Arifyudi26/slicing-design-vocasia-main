@@ -19,12 +19,15 @@
 
 <body>
     <div id="app">
-        <div id="sidebar" class="active">
+        <!--Sidebar-->
+        <div id="sidebar" class="active border-end position-fixed" style="z-index: 99;">
             <div class="sidebar-wrapper active">
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo-vocasia">
-                            <a href="index.html"><img src="../../assets/images/logo/vocasia.svg" alt="Logo" srcset=""></a>
+                            <a href="index.html">
+                                <img src="../../assets/images/logo/vocasia.svg" alt="Logo" srcset="">
+                            </a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -33,7 +36,6 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-
                         <li class="sidebar-item  ">
                             <a href="form-layout.html" class='sidebar-link'>
                                 <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/dashborad.svg" alt="">
@@ -208,26 +210,56 @@
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
         </div>
-        <div id="main">
+
+        <!--Main-->
+        <div id="main" class="border-start">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
             </header>
-
-            <div class="page-heading">
-                <img src="../../assets/images/faces/profile.svg" alt="">
-                <p class="text-black-50" >Hi, Jane Cooper</p>
-                <input style="margin-left:1rem;" class="form-pencarian" type="search" placeholder="Search" aria-label="Search">
-                <i style="float:right; padding-top:10px; border-radius:100%;" class=" bi-bell align-items-center"></i>
-                <h3 class="fw-bolder">Welcome Back</h3>
+            <div class="page-heading border-bottom pb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex bd-highlight">
+                            <div class="me-auto p-2 bd-highlight">
+                                <img
+                                src="../../assets/images/faces/profile.svg"
+                                class="rounded-circle float-start me-3 mb-2"
+                                alt="..."
+                                style="width: 63.6px; height: 95.4px border-radius: 50%;"
+                                />
+                                <div class="name float-end mt-2">
+                                <span> Hi, Jane Cooper </span>
+                                <h5 class="fw-bold fs-4 pt-2">Welcome back</h5>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                
+                                <div class="d-flex mt-2">
+                                    <span class="rounded-circle bg-light m-auto p-3 me-3">
+                                        <img src="/assets/images/logo/bell.svg" alt="" style="width: 24px; height: 24px;">
+                                    </span>
+                                    <form class="d-flex">
+                                        <div class="input-group" style="width: 300px!important;">
+                                            <button class="btn btn-outline-light bg-light" type="button" id="button-addon1">
+                                                <img src="/assets/images/logo/search.svg" alt="" style="width: 24px; height: 24px;">
+                                            </button>
+                                            <input type="text" class="form-control bg-light" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="page-content">
                 <section class="row">
                     <div class="col-12 col-lg-12">
                         <div class="row">
-                            <div class="col-2 col-lg-3 col-md-6">
-                                <div class="card shadow">
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card shadow position-relative">
                                     <div class="card-body px-3 py-4-5">
                                         <div class="row">
                                             <div class="col-12">
@@ -297,121 +329,64 @@
                         </div>
 
                         <div class="row">
-                            <div style="position: center;">
-                                <h5 style="float: left; ">Gambaran Umum Kursus</h5>
-                                <h5 style="float: left; margin-left: 6rem; ">Gambaran Umum Kursus</h5>
-                            </div>
-                            <div class="col-12 col-lg-3 col-xl-4">
-                                <div class="card shadow ">
-                                    <div class="row">
-                                        <div class="col-12 d-flex align-items-center">
-                                            <div id="chart-visitors-profile"></div>
-                                        </div>
-                                    </div>
+                            <div class="col-md-4">
+                                <h5 class="pb-3">Gambaran Umum Kursus</h5>
+                                <div class="card shadow h-75">
+                                    <div id="chart-visitors-profile" class="m-auto"></div>
                                 </div>
                             </div>
-                            <div style="height: 300px;" class="col-12 col-xl-8">
-                                <div class="card shadow ">
-                                    <div class="col-12 table-responsive">
-                                        <div id="chart-profile-visit"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="position:center;">
-                                <h5 style="float: left;">
-                                    Pendapatan instruktur belum di bayar
-                                </h5>
-                                <a href="#">
-                                    <img style="margin-left: 36rem;" src="../../assets/icons/edit.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-12">
-                                    <div class=" shadow pendapatan">
-                                        <table class="table">
-                                            <tr class="table table-hover">
-                                                <th>
-                                                    Judul Kursus
-                                                </th>
-                                                <th>
-                                                    Nama Instruktur
-                                                </th>
-                                                <th>
-                                                    Pendapatan instruktur
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    Belajar Grammar Untuk Pemula
-                                                </th>
-                                                <td>
-                                                    Maula Nikmas Email: email@maulanikma.com
-                                                </td>
-                                                <td>
-                                                    Rp. 175,000
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    Kiat Menjadi Video Editor Menggunakan Smartphone
-                                                </th>
-                                                <td>
-                                                    Ali Sanjani Email: alisanjani7@gmail.com
-                                                </td>
-                                                <td>
-                                                    Rp. 175,000
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    Public Relation Masterclass
-                                                </th>
-                                                <td>
-                                                    Firsan Nova Email: firsannova@yahoo.com
-                                                </td>
-                                                <td>
-                                                     Rp. 175,000
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    Digital Marketing
-                                                </th>
-                                                <td>
-                                                    Farid Subkhan Email: farid.subkhan@gmail.com
-                                                </td>
-                                                <td>
-                                                     Rp. 210,000
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    Kiat Menjadi Youtuber
-                                                </th>
-                                                <td>
-                                                    Ali Sanjani Email: alisanjani7@gmail.com
-                                                </td>
-                                                <td>
-                                                    Rp. 120,000
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    TRICK TALK: Rahasia Jitu Lancar Speaking Tanpa Mikir
-                                                </th>
-                                                <td>
-                                                    JagoBahasa.com Email: marketing@jagobahasa.com
-                                                </td>
-                                                <td>
-                                                    Rp. 179,700
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                            <div class="col-md-8">
+                                <h5 class="pb-3">Gambaran Umum Kursus</h5>
+                                <div class="card shadow h-75">
+                                    <div id="chart-profile-visit"></div>
                                 </div>
                             </div>
                         </div>
-                </section>
+
+                            <div class="d-flex bd-highlight my-4">
+                                <div class="flex-grow-1 bd-highlight">
+                                <h5 class="fw-bold">Pendapatan instruktur belum di bayar</h5>
+                                </div>
+                                <div class="bd-highlight">
+                                <a href="#" class="btn">
+                                    <img src="../../assets/icons/edit.svg" alt="">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="data">
+                            <table class="table shadow px-5 table-responsive">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Judul Kursus</th>
+                                    <th scope="col">Nama Instruktur</th>
+                                    <th scope="col">Pendapatan Instruktur</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <th>Belajar Grammar Untuk Pemula</th>
+                                    <td>Maula Nikmas
+                                        Email: email@maulanikma.com
+                                    </td>
+                                    <td>Rp. 175,000</td>
+                                    </tr>
+                                    <tr>
+                                    <th>Belajar Grammar Untuk Pemula</th>
+                                    <td>Maula Nikmas
+                                        Email: email@maulanikma.com
+                                    </td>
+                                    <td>Rp. 175,000</td>
+                                    </tr>
+                                    <th>Belajar Grammar Untuk Pemula</th>
+                                    <td>Maula Nikmas
+                                        Email: email@maulanikma.com
+                                    </td>
+                                    <td>Rp. 175,000</td>
+                                    </tr>   
+                                </tbody>
+                                </table>
+                            </div>
+                    </section>
                 </div>
             </div>
         </div>
