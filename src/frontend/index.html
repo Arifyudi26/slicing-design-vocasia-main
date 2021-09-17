@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo-vocasia">
+                            <a href="index.html"><img src="../../assets/images/logo/vocasia.svg" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/dashborad.svg" alt="">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/kategori.svg" alt="">
+                                <span>Katagori</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/kursus.svg" alt="">
+                                <span>Kursus</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/kupon.svg" alt="">
+                                <span>Kupon</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/komunitas.svg" alt="">
+                                <span>Komunitas</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/workshop.svg" alt="">
+                                <span>Work Shop</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">Workshop</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Peserta Workshop</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/t-bekerja.svg" alt="">
+                                <span>Transaksi Pekerja</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/t-online.svg" alt="">
+                                <span>Transaksi Online</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/murid.svg" alt="">
+                                <span>Murid</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="extra-component-avatar.html">Semua Murid</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-sweetalert.html">Murid Beasiswa</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-toastify.html">Murid Mitra</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/afiliasi.svg" alt="">
+                                <span>Afiliasi</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">Afiliator</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Materi Afiliasi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/pendaftaran.svg" alt="">
+                                <span>Pendaftaran</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">Riwayat Pendaftaran</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Mendaftarkan Murid</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/laporan.svg" alt="">
+                                <span type="span">Laporan<span class="position-left top-0 right-40 start-100 translate-middle badge rounded-pill bg-danger">
+                                    180
+                                </span>
+                                </span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">
+                                        <span type="span">Pendapatan Admin <span class="position-left top-30 right-40 start-100 translate-middle notice rounded-pill bg-danger">
+                                    55
+                                </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#"><span type="span">Pendapatan Instruktur<span class="position-left top-30 right-40 start-100 translate-middle notice rounded-pill bg-danger">
+                                    125
+                                </span>
+                                </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/pesan.svg" alt="">
+                                <span>Pesan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/pengaturan.svg" alt="">
+                                <span>Pengaturan</span>
+
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Sistem</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Website</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Pembayaran</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Instruktur/a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Bahasa</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan SMTP</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Tema</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Aplikasi Mobile</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <img src="../../assets/images/faces/profile.svg" alt="">
+                <p class="text-black-50" >Hi, Jane Cooper</p>
+                <input style="margin-left:1rem;" class="form-pencarian" type="search" placeholder="Search" aria-label="Search">
+                <i style="float:right; padding-top:10px; border-radius:100%;" class=" bi-bell align-items-center"></i>
+                <h3 class="fw-bolder">Welcome Back</h3>
+            </div>
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-2 col-lg-3 col-md-6">
+                                <div class="card shadow">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="jml-kursus">
+                                                    <img class="mx-auto d-block" src="../../assets/icons/kursus.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-center">23</h5>
+                                                <h6 class="fw-bold text-center text-black-50">jumlah Kursus</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card shadow">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="jml-kursus">
+                                                    <img class="mx-auto d-block" src="../../assets/icons/jum_pelajaran.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-center">510</h5>
+                                                <h6 class="fw-bold text-center text-black-50">jumlah Pelajaran</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-6 col-lg-3 col-md-6 ">
+                                <div class="card shadow">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="jml-kursus">
+                                                    <img class="mx-auto d-block" src="../../assets/icons/jum_pendaftaran.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-center">648</h5>
+                                                <h6 class="fw-bold text-center text-black-50">jumlah Pendaftaran</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-6 col-lg-3 col-md-6 ">
+                                <div class="card shadow">
+                                    <div class="card-body px-2 py-4-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="jml-kursus">
+                                                    <img class="mx-auto d-block" src="../../assets/icons/murid.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="fw-bold text-center">420</h5>
+                                                <h6 class="fw-bold text-center text-black-50">jumlah Siswa</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="position: center;">
+                                <h5 style="float: left; ">Gambaran Umum Kursus</h5>
+                                <h5 style="float: left; margin-left: 6rem; ">Gambaran Umum Kursus</h5>
+                            </div>
+                            <div class="col-12 col-lg-3 col-xl-4">
+                                <div class="card shadow ">
+                                    <div class="row">
+                                        <div class="col-12 d-flex align-items-center">
+                                            <div id="chart-visitors-profile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 300px;" class="col-12 col-xl-8">
+                                <div class="card shadow ">
+                                    <div class="col-12 table-responsive">
+                                        <div id="chart-profile-visit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position:center;">
+                                <h5 style="float: left;">
+                                    Pendapatan instruktur belum di bayar
+                                </h5>
+                                <a href="#">
+                                    <img style="margin-left: 36rem;" src="../../assets/icons/edit.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class=" shadow pendapatan">
+                                        <table class="table">
+                                            <tr class="table table-hover">
+                                                <th>
+                                                    Judul Kursus
+                                                </th>
+                                                <th>
+                                                    Nama Instruktur
+                                                </th>
+                                                <th>
+                                                    Pendapatan instruktur
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Belajar Grammar Untuk Pemula
+                                                </th>
+                                                <td>
+                                                    Maula Nikmas Email: email@maulanikma.com
+                                                </td>
+                                                <td>
+                                                    Rp. 175,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Kiat Menjadi Video Editor Menggunakan Smartphone
+                                                </th>
+                                                <td>
+                                                    Ali Sanjani Email: alisanjani7@gmail.com
+                                                </td>
+                                                <td>
+                                                    Rp. 175,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Public Relation Masterclass
+                                                </th>
+                                                <td>
+                                                    Firsan Nova Email: firsannova@yahoo.com
+                                                </td>
+                                                <td>
+                                                     Rp. 175,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Digital Marketing
+                                                </th>
+                                                <td>
+                                                    Farid Subkhan Email: farid.subkhan@gmail.com
+                                                </td>
+                                                <td>
+                                                     Rp. 210,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Kiat Menjadi Youtuber
+                                                </th>
+                                                <td>
+                                                    Ali Sanjani Email: alisanjani7@gmail.com
+                                                </td>
+                                                <td>
+                                                    Rp. 120,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    TRICK TALK: Rahasia Jitu Lancar Speaking Tanpa Mikir
+                                                </th>
+                                                <td>
+                                                    JagoBahasa.com Email: marketing@jagobahasa.com
+                                                </td>
+                                                <td>
+                                                    Rp. 179,700
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js "></script>
+
+    <script src="../../assets/vendors/apexcharts/apexcharts.js "></script>
+    <script src="../../assets/js/pages/dashboard.js "></script>
+
+    <script src="../../assets/js/main.js "></script>
+</body>
+
+</html>

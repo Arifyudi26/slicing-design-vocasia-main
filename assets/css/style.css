@@ -1,0 +1,102 @@
+.logo-vocasia img {
+    width: 150px;
+    height: 400px;
+}
+
+.jml-kursus img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    float: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.pendapatan {
+    width: 100%;
+    height: 100%;
+}
+
+.pendapatan img {
+    float: left;
+    width: 20px;
+    height: 20px;
+    position: right;
+    margin-left: 36rem;
+}
+
+.notice {
+    display: inline-block;
+    padding: .35em .60em;
+    font-size: .65em;
+    font-weight: 100;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+    margin-left: 140px;
+    margin-bottom: -70rem;
+}
+.form-pencarian {
+    display: block;
+    width: 30%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #607080;
+    background-color: #F7F7F7;
+    background-clip: padding-box;
+    border: 1px solid #dce7f1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+float:right;
+}
+
+height {
+    height: 100vh
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue
+}
