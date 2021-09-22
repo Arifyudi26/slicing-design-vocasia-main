@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <!--Sidebar-->
+        <div id="sidebar" class="active border-end position-fixed" style="z-index: 99;">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo-vocasia">
+                            <a href="index.html">
+                                <img src="../../assets/images/logo/vocasia.svg" alt="Logo" srcset="">
+                            </a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/dashborad.svg" alt="">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/kategori.svg" alt="">
+                                <span>Katagori</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/kursus.svg" alt="">
+                                <span>Kursus</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/kupon.svg" alt="">
+                                <span>Kupon</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/komunitas.svg" alt="">
+                                <span>Komunitas</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/workshop.svg" alt="">
+                                <span>Work Shop</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">Workshop</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Peserta Workshop</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/t-bekerja.svg" alt="">
+                                <span>Transaksi Pekerja</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/t-online.svg" alt="">
+                                <span>Transaksi Online</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/murid.svg" alt="">
+                                <span>Murid</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="extra-component-avatar.html">Semua Murid</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-sweetalert.html">Murid Beasiswa</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-toastify.html">Murid Mitra</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/afiliasi.svg" alt="">
+                                <span>Afiliasi</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">Afiliator</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Materi Afiliasi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/pendaftaran.svg" alt="">
+                                <span>Pendaftaran</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">Riwayat Pendaftaran</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Mendaftarkan Murid</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/laporan.svg" alt="">
+                                <span type="span">Laporan<span class="position-left top-0 right-40 start-100 translate-middle badge rounded-pill bg-danger">
+                                    180
+                                </span>
+                                </span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">
+                                        <span type="span">Pendapatan Admin <span class="position-left top-30 right-40 start-100 translate-middle notice rounded-pill bg-danger">
+                                    55
+                                </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#"><span type="span">Pendapatan Instruktur<span class="position-left top-30 right-40 start-100 translate-middle notice rounded-pill bg-danger">
+                                    125
+                                </span>
+                                </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/pesan.svg" alt="">
+                                <span>Pesan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <img class="bi bi-file-earmark-medical-fill" src="../../assets/icons/pengaturan.svg" alt="">
+                                <span>Pengaturan</span>
+
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Sistem</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Website</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Pembayaran</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Instruktur/a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Bahasa</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan SMTP</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">pengaturan Tema</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#">Aplikasi Mobile</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="row">
+                    <div class="col-12">
+                        <img style="width: 63.6px; height: 95.4px " src="../../assets/images/faces/profile.svg" class=" float-start me-3 mb-2 col-1" alt="">
+                        <div class="name float-start mt-2 col-2">
+                            <span class="text-black-50"></span> Hi, Jane Cooper </span>
+                            <h5 class="fw-bold fs-4 pt-2">Welcome back</h5>
+                        </div>
+                        <div class="col-33">
+                            <input style="margin-left:1rem;" class="form-pencarian" type="search" placeholder="Search" aria-label="Search">
+                            <i style="float:right; padding-top:10px; border-radius:100%;" class=" bi-bell align-items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-9 py-3">
+                                <h4> Kategori Kursus
+                                </h4>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <i class="bi bi-plus"></i>Tambah kategori baru</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-3 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_1.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Calculator.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Akuntansi & Keuangan</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">9 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_2.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Computer.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Ilmu Komputer</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">13 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Web Development</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Bahasa Pemrograman</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Mobile Apps</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Data Science</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Game Development</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Database</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Software Testing</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Development Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">IT & Certification</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Network & Security</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Hardware</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Sistem Operasi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-lg-4 col-md-6 ">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_3.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/music.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Hobi & Lifestyle</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">11 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group ">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Music</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Robotics</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ternak & Budidaya</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Arts & Crafts</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Food & Beverage</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Beauty & Makeup</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Travel</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Gaming</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Home Improvement</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pet Care & Training</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="row">
+                                <div class="col-3 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_1.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Calculator.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Akuntansi & Keuangan</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">9 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_2.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Computer.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Ilmu Komputer</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">13 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-lg-4 col-md-6 ">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_3.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/music.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Hobi & Lifestyle</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">11 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group ">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="row">
+                                <div class="col-3 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_1.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Calculator.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Akuntansi & Keuangan</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">9 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_2.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Computer.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Ilmu Komputer</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">13 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-lg-4 col-md-6 ">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_3.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/music.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Hobi & Lifestyle</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">11 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group ">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-3 col-lg-4 col-md-6">
+                                    <div class="card shadow">
+                                        <div class="card-body px-3 py-4-5">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div>
+                                                        <img style="width: 100%;" src="../../assets/images/samples/img_1.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col">
+                                                        <img style="width:8%; float: left;" src="../../assets/icons/Calculator.svg" alt="">
+                                                        <h5 style="margin-left: 10%;" class="col fw-bold text-start">Akuntansi & Keuangan</h5>
+                                                        <p style="margin-left: 10%;" class="text-black-50">9 Sub Kategori</p>
+                                                    </div>
+                                                    <div style="margin-left: 8%;" class="list-group py-2">
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Akuntansi & Pembukuan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Compliance</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Cryptocurrency & Blockchain</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Ekonomi</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Keuangan</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Investasi & Trading</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Finance Management Tools</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Pajak</a>
+                                                        <a href="#" class="list-group-item list-group-item-action w-100">Lainnya</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.5.1.js "></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js "></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js "></script>
+    <script src="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js "></script>
+    <script src="../../assets/vendors/apexcharts/apexcharts.js "></script>
+    <script src="../../assets/js/pages/dashboard.js "></script>
+    <script src="../../assets/js/main.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('table').DataTable();
+        });
+
+        function myFunction() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>
